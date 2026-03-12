@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wendy512/go-iecp5/asdu"
+	"github.com/WindKnocking/go-iecp5/asdu"
 )
 
 // ClientOption 客户端配置

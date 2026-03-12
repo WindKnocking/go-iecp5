@@ -11,8 +11,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/wendy512/go-iecp5/asdu"
-	"github.com/wendy512/go-iecp5/clog"
+	"github.com/WindKnocking/go-iecp5/asdu"
+	"github.com/WindKnocking/go-iecp5/clog"
 )
 
 // ServerSpecial server special interface
