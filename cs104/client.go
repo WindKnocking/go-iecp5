@@ -420,8 +420,10 @@ func (sf *Client) run(ctx context.Context) {
 func (sf *Client) handlerLoop() {
 	sf.Debug("handlerLoop started")
 	defer func() {
+		sf.cancel() //edit By wk,修正104服务端断开时，104客户端阻塞，没有继续重连问题
 		sf.wg.Done()
 		sf.Debug("handlerLoop stopped")
+		sf.cleanUp() //edit By wk,修正104服务端断开时，104客户端阻塞，没有继续重连问题
 	}()
 
 	for {
